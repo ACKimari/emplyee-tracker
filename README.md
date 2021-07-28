@@ -19,4 +19,4 @@ Step 5: Before you begin your index.js file, install the following: npm init, np
 
 ## Usage
 
-Walkthrough Video link: 
+Walkthrough Video link: https://drive.google.com/file/d/179E9So6rxMK5OxNd_d-XArI9H2pTy049/view?usp=sharing 

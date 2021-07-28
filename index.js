@@ -1,7 +1,26 @@
+const express = require('express');
 const inquirer = require("inquirer");
 // get the client
 const mysql = require('mysql2');
+
+const PORT = process.env.PORT || 3001;
+const app = express();
+
+const cTable = require('console.table');
+console.table([
+  {
+    name: '',
+    role: 'Salesperson'
+  }, {
+    name: 'bar',
+    age: 20
+  }
+]);
  
+// Express middleware
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 // create the connection to database
 const db = mysql.createConnection({
   host: 'localhost',
@@ -12,6 +31,11 @@ const db = mysql.createConnection({
  
 // Query database
 db.query('SELECT * FROM department', function (err, results) {
+    console.log(results);
+  });
+
+// Query database
+db.query('SELECT * FROM role_category', function (err, results) {
     console.log(results);
   });
   

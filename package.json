@@ -1,0 +1,25 @@
+{
+  "name": "emplyee-tracker",
+  "version": "1.0.0",
+  "description": "An application that allows you to track your Employees.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACKimari/emplyee-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ACKimari/emplyee-tracker/issues"
+  },
+  "homepage": "https://github.com/ACKimari/emplyee-tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.1.2",
+    "mysql2": "^2.2.5"
+  }
+}
